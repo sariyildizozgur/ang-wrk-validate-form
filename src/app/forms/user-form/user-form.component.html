@@ -1,0 +1,62 @@
+<!-- <form [formGroup]="userForm">
+    <div class="row">
+        <div class="form-group col-md-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Kimlik Numarası</mat-label>
+                <input  type="number" matInput placeholder="Kimlik Numarası" name="identityNumber" formControlName="identityNumber" >
+                <control-messages [control]="userFormControl.identityNumber" ></control-messages>
+              </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Doğum Tarihi</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="birthDate">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <control-messages [control]="userFormControl.birthDate" ></control-messages>
+            </mat-form-field>
+        </div>
+        <div class="form-group col-md-6">
+          <dropdown-generic-type formControlName="genderId" [dataSource] = "genderList" [labelName]="'Cinsiyet'">
+          </dropdown-generic-type>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email" name="email" >
+                <control-messages [control]="userFormControl.email" ></control-messages>
+            </mat-form-field>
+        </div>
+        <div class="form-group col-md-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Cep Telefonu</mat-label>
+                <input matInput placeholder="Cep Telefonu" formControlName="phone" name="phone" mask="(000) 000 00 00">
+                <control-messages [control]="userFormControl.phone"  ></control-messages>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <mat-form-field appearance="outline">
+                <mat-label>Şifre</mat-label>
+                <input matInput  [type]="hide ? 'password' : 'text'" placeholder="Şifre" formControlName="password" name="password" >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Şifre gizle'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                <control-messages [control]="userFormControl.password" ></control-messages>
+            </mat-form-field>
+           
+        </div>
+    </div>
+    <div>
+        <button mat-button mat-raised-button color="danger" [disabled]="!userForm.valid" formDialog (saveEvent)="saveUserForm()" matStepperPrevious>Kaydet</button>
+       
+        <button mat-button mat-raised-button color="primary"[disabled]="!userForm.valid"  class="float-right"  style="float: right;" matStepperNext>İleri</button>
+      </div>
+  </form>
+
+  <button mat-button mat-raised-button color="danger" (click)="openComponent()">Dinamik Form</button> -->
