@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { IdentityValidator } from 'src/app/validator/identityNumber.validator';
+import { IdentityValidator } from '../../validator/identityNumber.validator';
 
 @Component({
   selector: 'app-user-form',
